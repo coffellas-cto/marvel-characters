@@ -1,5 +1,7 @@
 marvel-characters
 =================
+![App screenshots](https://raw.githubusercontent.com/coffellas-cto/marvel-characters/master/Marvel/marvel009.png)
+
 Uses Marvel REST API to get the database of Marvel characters.
 To build this project you must download and include RestKit https://github.com/RestKit/RestKit.
 
