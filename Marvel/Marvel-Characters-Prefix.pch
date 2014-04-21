@@ -1,0 +1,37 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+#endif
+
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+
+#import "Categories/Categories.h"
+
+#ifdef DEBUG
+#define XLog(fmt, ...) NSLog((@"%s (%d): " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define XLog(...)
+#endif
+
+//https://developer.marvel.com/documentation/authorization
+#define MARVEL_API_BASEPOINT @"http://gateway.marvel.com/"
+#define MARVEL_PUBLIC_KEY @""
+#define MARVEL_PRIVATE_KEY @""
+#define MARVEL_API_PATH_PATTERN @"v1/public/"
+#define MARVEL_API_CHARACTERS_PATH_PATTERN @"characters"
+
+#define NOTIFICATION_MUST_SHOW_DETAILS @"MustShowDetail"
