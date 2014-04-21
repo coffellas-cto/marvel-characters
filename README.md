@@ -1,6 +1,6 @@
 marvel-characters
 =================
-Uses Marvel REST API to get the database of Marvel charcters.
+Uses Marvel REST API to get the database of Marvel characters.
 To build this project you must download and include RestKit https://github.com/RestKit/RestKit.
 
 You also need to register as a developer at //https://developer.marvel.com in order to obtain your public and private keys.
